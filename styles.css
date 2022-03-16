@@ -1,0 +1,170 @@
+:root {
+  --light_gray: #dddd;
+  --orange: #ff7733;
+  --green: #00a650;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.colorQty {
+  padding: 0.3rem;
+  color: gray;
+  border: 1px solid var(--light_gray);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: -1.3rem;
+  display: block;
+  background-color: white;
+  width: 50px;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  width: 22rem;
+  margin: 2rem auto;
+  border: 1px solid var(--light_gray);
+  padding: 2rem;
+}
+
+.discount {
+  padding: 0.4rem;
+  color: white;
+  background-color: var(--orange);
+  font-weight: 400;
+  text-align: center;
+  border-radius: 12px;
+  width: 80px;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+.discountGreen {
+  color: var(--green);
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.full {
+  color: var(--green);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+span.full {
+  margin-left: 0.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1);
+  gap: 2rem;
+}
+
+.lineSeparator {
+  width: 100%;
+  background-color: var(--light_gray);
+  height: 0.1rem;
+  margin-top: 1rem;
+}
+
+.mostSelled {
+  padding: 0.1rem;
+  color: white;
+  background-color: var(--orange);
+  font-weight: 400;
+  text-align: center;
+  border-radius: 7px;
+  width: 120px;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+.oldPrice {
+  font-weight: 300;
+  text-decoration: line-through;
+  color: gray;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.priceContainer h2 {
+  font-weight: 400;
+}
+
+.productTitle {
+  font-weight: 400;
+  text-align: left;
+  color: gray;
+  margin-top: 2rem;
+}
+
+.shippingContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.shippToday {
+  background-color: var(--green);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.3rem;
+  border-radius: 5px;
+  margin-right: 0.6rem;
+}
+.shippTodayFree {
+  width: 120px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.truck {
+  padding: 0.7rem;
+  color: var(--green);
+  outline: 0.5px solid var(--light_gray);
+  border-radius: 20px;
+  width: 20px;
+  display: block;
+  background-color: white;
+  margin: -1.4rem 0 0 17rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
